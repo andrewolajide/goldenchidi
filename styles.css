@@ -1082,7 +1082,7 @@ textarea {
   position: relative;
   background: url('images/mobile-hero.jpg') no-repeat center center/cover;
   background-size: cover;
-  background-attachment: fixed; /* changed to fixed from scroll */
+  background-attachment: scroll;
 }
 
 .index-hero::before {
