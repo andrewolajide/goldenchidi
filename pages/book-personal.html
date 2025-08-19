@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Personal</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      />
+    </noscript>
+  </head>
+
+  <body class="about-page">
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-bar-row">
+          <div class="nav-left">
+            <a href="#real-estate-services">REAL ESTATE SERVICES</a>
+            <a href="/pages/about.html">ABOUT ME</a>
+            <a href="/pages/contact-me.html">CONTACT ME</a>
+          </div>
+          <div class="nav-center">
+            <a href="/" class="nav-logo-link">
+              <img src="/images/website logo.png" alt="Logo" class="nav-logo" />
+            </a>
+            <a href="/" class="nav-title">GOLDEN CHIDI</a>
+          </div>
+          <div class="nav-right">
+            <a href="/pages/book-personal.html" class="nav-btn"
+              ><button>BOOK PERSONAL</button></a
+            >
+            <a href="/pages/book-team.html" class="nav-btn"
+              ><button>BOOK TEAM</button></a
+            >
+          </div>
+
+          <div class="hamburger" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="mobile-menu">
+          <li><a href="#search-home">REAL ESTATE SERVICES</a></li>
+          <li><a href="/pages/about.html">ABOUT ME</a></li>
+          <li><a href="/pages/book-personal.html">BOOK PERSONAL</a></li>
+          <li><a href="/pages/book-team.html">BOOK TEAM</a></li>
+          <li><a href="/pages/contact-me.html">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="training-img-container">
+      <img
+        src="/images/training.jpg"
+        alt="Training Image"
+        class="training-img"
+      />
+      <div class="book-img-text">
+        <h2>IN-DEPTH<br />TRAINING SESSION</h2>
+      </div>
+    </div>
+
+    <div class="training-text">
+      <h3>WHY CHOOSE PERSONAL CONSULTATION WITH GOLDEN</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum in
+        sapiente, porro recusandae accusamus dolorem exercitationem doloribus?
+        Accusamus reiciendis perferendis voluptate laboriosam animi?
+        Consequuntur placeat blanditiis temporibus quod voluptate porro deleniti
+        at quam repudiandae, expedita explicabo iste! Odit repellat dolorem
+        magni. Eaque repudiandae ex enim veniam atque, nulla itaque voluptatibus
+        iste nisi nesciunt optio facere dolores ipsa assumenda possimus sapiente
+        harum natus commodi dolore dicta molestias? Nihil quos eaque tempora
+        error mollitia eos fugiat fugit doloribus numquam iusto unde assumenda
+        in optio aperiam earum, possimus quam. Aspernatur recusandae, eaque,
+        culpa, laudantium dolore magnam libero laboriosam vitae inventore
+        voluptate totam!
+      </p>
+    </div>
+
+    <section class="book-one-on-one" id="book-one-on-one">
+      <div class="one-on-one-bg"></div>
+      <div class="form-wrapper">
+        <h2>BOOK A PERSONAL SESSION WITH GOLDEN</h2>
+        <p>
+          Golden Chidi is one of the world's most successful real estate agents
+          and has helped hundreds of buyers find their dream home in Lagos,
+          Nigeria, resulting in over $3 Billion of closed real estate
+          transactions.
+        </p>
+
+        <form
+          action="https://formsubmit.co/doxahmedia@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Honeypot anti-spam field (invisible to humans) -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Redirect on success -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://goldenchidi.site/thank-you.html"
+          />
+
+          <!-- Redirect on error -->
+          <input
+            type="hidden"
+            name="_error"
+            value="https://goldenchidi.site/error.html"
+          />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Valid Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone*</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Session Type*</label>
+            <select id="service" name="service" required>
+              <option value="">-- Please choose an option --</option>
+              <option value="in-person">In Person</option>
+              <option value="virtual">Virtual Session</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy"
+              >I Agree to <a href="#">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="footer-section align-left">
+            <p><strong>Contact</strong></p>
+            <p>goldenchidi@yahoo.com</p>
+            <p>+234(0)701 234 5678</p>
+            <p class="office"><strong>Office</strong></p>
+            <p>
+              35 Princess and Angel Mall,<br />Ajah express road, Lagos State
+            </p>
+          </div>
+          <div class="footer-section align-center">
+            <p><strong>Quick Links</strong></p>
+            <a href="/">Home</a>
+            <p>Real Estate Services</p>
+            <a href="about.html">About Me</a>
+            <a href="contact-me.html">Contact Me</a>
+          </div>
+          <div class="footer-section align-center2">
+            <a href="book-personal.html">Book Personal Session</a>
+            <a href="book-team.html">Book Team Session</a>
+          </div>
+          <div class="footer-section align-right">
+            <p class="footer-name">Golden Chidi</p>
+            <div class="social-icons right-icons">
+              <a
+                href="https://www.instagram.com/listings_bygolden"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/golden-chidi-unaegbu-52b3b5150"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://youtube.com/@thegoldenchidi"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/unaegbu.golden"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-copy">© 2025 Golden Chidi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu(el) {
+        const menu = document.querySelector(".mobile-menu");
+        el.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".mobile-menu");
+
+        if (
+          !hamburger.contains(event.target) &&
+          !menu.contains(event.target) &&
+          hamburger.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          menu.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
