@@ -161,13 +161,16 @@ body {
 
 .mobile-menu {
   display: none;
+  padding-top: 3rem;
   flex-direction: column;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
+  height: 100vh;           /* full viewport height */
   width: 100%;
   background-color: #111;
   z-index: 998;
+  transition: transform 0.3s ease-in-out;
 }
 
 .mobile-menu.active {
@@ -182,7 +185,7 @@ body {
 .mobile-menu li a {
   font-family: 'Poppins', sans-serif;
   display: block;
-  padding: 1rem;
+  padding: 1.5rem;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -1111,7 +1114,7 @@ font-weight: bolder;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 30;
+  z-index: 1;
   background: rgba(0,0,0,0.5);
   color: white;
   border: none;
